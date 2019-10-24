@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class EnterNumber {
-
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    private double number = 0;
 
-    public double number (double number){
+    public double number (){
         System.out.println("Введите значение: ");
         try {
             number = Double.parseDouble(reader.readLine());
@@ -18,4 +18,6 @@ public class EnterNumber {
         }
         return number;
     }
+
+
 }
