@@ -9,7 +9,7 @@ public class EnterNumber {
     private double doubleNumber = 0.0;
 
     public double enterNumber(){
-        System.out.println("Введите дйествительное число: ");
+        System.out.println("Введите действительное число: ");
         try {
             doubleNumber = Double.parseDouble(reader.readLine());
         } catch (IOException e) {
