@@ -12,7 +12,7 @@ public class EnterNumber {
         System.out.println("Введите действительное число: ");
         try {
             doubleNumber = Double.parseDouble(reader.readLine());
-        } catch (IOException e) {
+        } catch (Exception e) {
             //e.printStackTrace();
             System.out.println("Вы ввели не число(число введенно не корректно), попробуйте еще раз!");
             enterNumber();
