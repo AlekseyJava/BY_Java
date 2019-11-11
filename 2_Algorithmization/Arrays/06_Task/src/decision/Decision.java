@@ -11,8 +11,6 @@ public class Decision {
         System.out.println("Введите размер массива");
 
         N =  Integer.parseInt(scanner.next());
-        //System.out.println("Введите i");
-        //int i = Integer.parseInt(scanner.next());
 
         int[] a = new int[N];
 
@@ -26,7 +24,6 @@ public class Decision {
             for (int j = 2; j < a[i]; j++){
                 if(((a[i]%j) == 0)||(a[i]==2)) {
                     variable = 1;
-                    //sum = sum + a[i];
                 }
 
             }
