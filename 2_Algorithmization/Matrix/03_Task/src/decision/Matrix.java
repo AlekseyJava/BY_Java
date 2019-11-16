@@ -29,8 +29,11 @@ public class Matrix {
         for (int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
                 matrix[i][j] = (int)(Math.random()*100 + 1);
+                System.out.print("\t" + matrix[i][j]);
             }
+            System.out.println();
         }
+
 
         return matrix;
     }
