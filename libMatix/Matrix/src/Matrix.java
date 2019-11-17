@@ -4,8 +4,8 @@ import java.io.InputStreamReader;
 
 public class Matrix {
 
-   // public static void main(String[] args) {
-  //  }
+    public static void main(String[] args) {
+    }
     private int n = 0;
     private int m = 0;
 
