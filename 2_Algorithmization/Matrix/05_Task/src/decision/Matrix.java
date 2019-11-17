@@ -1,46 +1,45 @@
+package decision;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Matrix {
-
-   // public static void main(String[] args) {
-  //  }
     private int n = 0;
     private int m = 0;
 
+    public Matrix() {
+    }
 
-    public int[][] squareMatrixCreation(){
-
+    public int[][] squareMatrixCreation() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите размер n квадратной матрицы: ");
+
         try {
-            n = Integer.parseInt(reader.readLine());
-        } catch (IOException e) {
+            this.n = Integer.parseInt(reader.readLine());
+        } catch (IOException var5) {
             System.out.println("Размер матрицы введен не правильно");
             System.out.println("Должно быть целое положительное число");
-            squareMatrixCreation();
-            //e.printStackTrace();
+            this.squareMatrixCreation();
         }
 
-        m = n;
-        int [][] matrix = new int[n][m];
+        this.m = this.n;
+        int[][] matrix = new int[this.n][this.m];
 
-        for (int i = 0; i < n; i++){
-            for (int j = 0; j < m; j ++){
+        for(int i = 0; i < this.n; ++i) {
+            for(int j = 0; j < this.m; ++j) {
                 matrix[i][j] = i;
             }
         }
 
         return matrix;
-
     }
 
     public int getN() {
-        return n;
+        return this.n;
     }
 
     public int getM() {
-        return m;
+        return this.m;
     }
 }
