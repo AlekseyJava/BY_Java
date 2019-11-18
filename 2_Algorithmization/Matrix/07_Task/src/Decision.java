@@ -9,7 +9,7 @@ public class Decision {
         for (int i = 0; i < N; i++){
             for (int j = 0; j < N; j++){
                 matrixA[i][j] = Math.sin(((i+1)*(i+1) - (j+1)*(j+1))/N);
-                System.out.print("\t" + matrixA[i][j]);
+                //System.out.print("\t" + matrixA[i][j]);
                 if (matrixA[i][j] > 0){
                     count ++;
                 }
