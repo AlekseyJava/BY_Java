@@ -5,14 +5,13 @@ package sum;
 // с номерами от k до m.
 public class SumOfThree {
     public static void main(String[] args) {
-        int n = 0; //размер массива
-        int k = 0;
-        int m = 0;
+        System.out.println("Программа вычисления суммы трех последовательно расположенных" +
+                " элементов массива с номерами от k до m");
 
         Variable variable = new Variable();
-        n = variable.value();
-        k = variable.value();
-        m = variable.value();
+        int n = variable.value();
+        int k = variable.value();
+        int m = variable.value();
 
         int[] D = new int[n];
         D = new ArrayRandom().arrayFilling(D);//заполняем массив случайными числами от 0 до 9
