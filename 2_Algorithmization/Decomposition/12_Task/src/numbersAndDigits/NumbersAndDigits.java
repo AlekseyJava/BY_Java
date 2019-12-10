@@ -10,7 +10,6 @@ public class NumbersAndDigits {
         int[] A = new int[n];
         int sum = 0;
         int randomKolvaCifr = 0;
-        int random = 0;
 
 //количество цифр
         while (k1 > 0) {
@@ -28,25 +27,18 @@ public class NumbersAndDigits {
         }
         System.out.println();
 
+        // метод рандом
         for(int i = 0; i < n ; i++){
             randomKolvaCifr = (int)(Math.random()*count);
             System.out.println(randomKolvaCifr);
 
             for(int j = 0; j < randomKolvaCifr; j++) {
                 sum = sum + a[(int) (Math.random() * count)];
-                //}
-                //System.out.println(i);
-                //System.out.print(A[i] + "\t");
                 sum = 0;
             }
             A[i] = sum;
 
         }
 
-        //System.out.println();
-
-
-        //System.out.println();
-        //System.out.println(count);
     }
 }
