@@ -1,5 +1,6 @@
 package palindrom;
 
+//Метод для проверки является ли слово полиндромом
 public class Palindrom {
     public static void main(String[] args) {
         StringBuilder s = new StringBuilder("dad");
@@ -8,14 +9,14 @@ public class Palindrom {
         s.reverse();
         //s.reverse();
 
-        if (s.equals(s1)) {
+        if (s.toString().equals(s1.toString())) {
             System.out.println("Polindrom");
         }
         else {
             System.out.println("Not polindrom");
         }
-        System.out.println(s1);
         System.out.println(s);
+        System.out.println(s1);
 
     }
 }
