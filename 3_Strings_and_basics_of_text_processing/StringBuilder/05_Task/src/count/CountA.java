@@ -17,15 +17,15 @@ public class CountA {
 
         //не мой метод
         System.out.println("\n");
-        String input = "kljsdhfdskhjis iiisisis";
+        String input = "aaa my stringa ";
 
-        int index = input.indexOf("is");
+        int index = input.indexOf("a");
         int count1 = 0;
         while (index != -1) {
             count1++;
             input = input.substring(index + 1);
-            index = input.indexOf("is");
+            index = input.indexOf("a");
         }
-        System.out.println("No of *is* in the input is : " + count1);
+        System.out.println("a встречается : " + count1 + " раз");
     }
 }
