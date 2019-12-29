@@ -7,8 +7,31 @@ package textParsing;
 // 3. отсортировать лексемы в предложении по убыванию количества вхождений заданного символа,
 // а в случае равенства – по алфавиту.
 
+import myPackahe_1.Hello;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class TaxtParsing {
     public static void main(String[] args) {
-        
+
+        String inputString;
+
+        InputText text = new InputText();
+        inputString = text.input();
+
+        String pattern = "\\\\n";
+        int countParagraph = 1;
+
+        Pattern ptrn = Pattern.compile(pattern);
+        Matcher matcher = ptrn.matcher(inputString);
+
+        while (matcher.find()){
+            countParagraph++;
+        }
+
+        System.out.println(inputString);
+        System.out.println("Количество абзацев - " + countParagraph);
+
     }
 }
