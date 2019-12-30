@@ -8,6 +8,7 @@ package textParsing;
 // а в случае равенства – по алфавиту.
 
 import myPackahe_1.Hello;
+import sun.dc.path.PathError;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -25,6 +26,9 @@ public class TaxtParsing {
 
         Pattern ptrn = Pattern.compile(pattern);
         Matcher matcher = ptrn.matcher(inputString);
+
+        Pattern myPattern = Pattern.compile("a");
+        Matcher matcher1 = myPattern.matcher(inputString);
 
         while (matcher.find()){
             countParagraph++;
