@@ -8,7 +8,7 @@ public class Main {
         trains.add(new Train("Saratov", 10, new Date()));
         Thread.sleep(1000);
         trains.add(new Train("Moskow", 8, new Date()));
-        Thread.sleep(1000);
+        Thread.sleep(500);
         trains.add(new Train("Saratov", 3, new Date()));
         Thread.sleep(500);
         trains.add(new Train("Moskow", 19, new Date()));
