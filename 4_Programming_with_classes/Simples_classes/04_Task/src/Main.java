@@ -10,7 +10,7 @@ public class Main {
         trains.add(new Train("Moskow", 8, new Date()));
         Thread.sleep(1000);
         trains.add(new Train("Saratov", 3, new Date()));
-        Thread.sleep(1000);
+        Thread.sleep(500);
         trains.add(new Train("Moskow", 19, new Date()));
 
         System.out.println("Enter number train to print");
@@ -26,7 +26,7 @@ public class Main {
         sortByDeparture(trains);
         print(trains);
     }
-    
+
     public static void sortByNumber(List<Train> trains) {
         Collections.sort(trains, new Comparator<Train>() {
             @Override
@@ -41,8 +41,8 @@ public class Main {
     }
 
     public static void informationByNumber(List<Train> trains, int number) {
-        for(Train train : trains) {
-            if(train.getNumberTrain()==number) {
+        for (Train train : trains) {
+            if (train.getNumberTrain() == number) {
                 System.out.println(train.toString());
             }
         }

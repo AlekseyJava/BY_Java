@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Date;
+import java.util.Objects;
 
 public class Train {
     private String destination;
